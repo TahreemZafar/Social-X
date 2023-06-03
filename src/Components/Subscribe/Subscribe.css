@@ -1,0 +1,89 @@
+section#subscribe {
+  background: url(../../assets/subscribe-bg.png);
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color-white);
+}
+
+.subscribe h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+form > * {
+  width: 100%;
+  max-width: 50rem;
+  margin: 3rem auto;
+}
+
+form input {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #777;
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+  outline: none;
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+form button {
+  padding: 1rem;
+  border: 1px solid var(--form-button);
+  background: var(--form-button);
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 2rem;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border: 1.4px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background: var(--light-blue);
+}
+
+@media screen and (max-width: 600px) {
+  form input {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .social-icon {
+    margin: 1rem;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1.4px solid #fff;
+    border-radius: 50%;
+  }
+
+  .subscribe h2 {
+    font-size: 2.5rem;
+  }
+}
